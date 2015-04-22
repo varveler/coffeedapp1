@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'coffeedapp1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-if ON_HEROKU == True:
+if ON_HEROKU == '1':
 
     import dj_database_url
     DATABASES = {'default':  dj_database_url.config()}
