@@ -9,7 +9,7 @@
 	    {% if location.hours %}<p><b>Location: </b>{{location.address}}</p>{% endif %}
 	    {% if location.hours %}<p>{{ location.hours }}</p>{% endif %}
 	    {% if location.image_file %}
- 			<img class="img-responsive" src="{{ location.image_file.url }}"></img>
+ 			<img class="img-responsive" src="{{ Location.image_file.url }}"></img>
  		{% endif %}
 	    <p>{{location.description}}</p>
 	    </div>
